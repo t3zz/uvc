@@ -15,6 +15,7 @@
 		BBA252C221505168003E0D22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBA252C021505168003E0D22 /* LaunchScreen.storyboard */; };
 		BBA252CD21505168003E0D22 /* uvcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA252CC21505168003E0D22 /* uvcTests.swift */; };
 		BBA252D821505169003E0D22 /* uvcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA252D721505169003E0D22 /* uvcUITests.swift */; };
+		BBA252E6215065BC003E0D22 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA252E5215065BC003E0D22 /* LaunchScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BBA252D321505169003E0D22 /* uvcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = uvcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBA252D721505169003E0D22 /* uvcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uvcUITests.swift; sourceTree = "<group>"; };
 		BBA252D921505169003E0D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBA252E5215065BC003E0D22 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				BBA252BB21505162003E0D22 /* Main.storyboard */,
 				BBA252BE21505168003E0D22 /* Assets.xcassets */,
 				BBA252C021505168003E0D22 /* LaunchScreen.storyboard */,
+				BBA252E5215065BC003E0D22 /* LaunchScreen.swift */,
 				BBA252C321505168003E0D22 /* Info.plist */,
 			);
 			path = uvc;
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBA252E6215065BC003E0D22 /* LaunchScreen.swift in Sources */,
 				BBA252BA21505162003E0D22 /* SecondViewController.swift in Sources */,
 				BBA252B621505162003E0D22 /* AppDelegate.swift in Sources */,
 				BBA252B821505162003E0D22 /* FirstViewController.swift in Sources */,
@@ -348,8 +352,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
+				CODE_SIGN_IDENTITY = "Apple Code Signing Certification Authority";
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -408,8 +412,8 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
+				CODE_SIGN_IDENTITY = "Apple Code Signing Certification Authority";
+				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -423,6 +427,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -441,7 +446,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = d.uvc;
+				PRODUCT_BUNDLE_IDENTIFIER = underground.vampire.club;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -459,7 +464,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = d.uvc;
+				PRODUCT_BUNDLE_IDENTIFIER = underground.vampire.club;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

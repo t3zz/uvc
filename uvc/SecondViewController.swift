@@ -7,19 +7,27 @@
 //
 
 import UIKit
+import WebKit
 
 class SecondViewController: UIViewController {
-
+    
+    @IBOutlet weak var webView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let url = URL (string: "https://soundcloud.com/underground-vampire-club");
+        let request = URLRequest(url: url!);
+        webView.load(request);
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
+
 
