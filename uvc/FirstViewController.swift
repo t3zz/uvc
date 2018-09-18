@@ -17,6 +17,8 @@ class FirstViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         webView.allowsBackForwardNavigationGestures = true
+        webView.scrollView.bounces = false
+
         let url = URL (string: "https://undergroundvampireclub.com");
         let request = URLRequest(url: url!);
         webView.load(request);

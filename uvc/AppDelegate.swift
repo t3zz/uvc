@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         // Set Tab Bar Color to Black
-        UITabBar.appearance().tintColor = UIColor.black
+        // UITabBar.appearance().tintColor = UIColor.black
         
         return true
     }

@@ -16,6 +16,8 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        webView.allowsBackForwardNavigationGestures = true
+        webView.scrollView.bounces = false
         
         let url = URL (string: "https://soundcloud.com/underground-vampire-club");
         let request = URLRequest(url: url!);
