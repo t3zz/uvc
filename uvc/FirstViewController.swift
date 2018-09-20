@@ -65,7 +65,7 @@ class FirstViewController: UIViewController, WKNavigationDelegate {
     
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         // Do some stuff before navigation procedures
-        let css = "body { background-color : #2F4F4F }"
+        let css = "body { background-color : #222 }"
         let cssjs = "var style = document.createElement('style'); style.innerHTML = '\(css)'; document.head.appendChild(style);"
         let scrolljs = "var meta = document.createElement('meta');" +
             "meta.name = 'viewport';" +
