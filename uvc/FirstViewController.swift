@@ -25,6 +25,7 @@ class FirstViewController: UIViewController, WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Set navigationDelegate
         webView.navigationDelegate = self
 
@@ -58,7 +59,22 @@ class FirstViewController: UIViewController, WKNavigationDelegate {
         }
     }
 
+    func scrollViewWillBeginZooming(_ scrollView: UIScrollView, with view: UIView?) {
+        scrollView.pinchGestureRecognizer?.isEnabled = false
+    }
+    
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+        // Do some stuff before navigation procedures
+        let css = "body { background-color : #2F4F4F }"
+        let cssjs = "var style = document.createElement('style'); style.innerHTML = '\(css)'; document.head.appendChild(style);"
+        let scrolljs = "var meta = document.createElement('meta');" +
+            "meta.name = 'viewport';" +
+            "meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';" +
+            "var head = document.getElementsByTagName('head')[0];" + "head.appendChild(meta);";
+        webView.evaluateJavaScript(scrolljs, completionHandler: nil)
+        webView.evaluateJavaScript(cssjs, completionHandler: nil)
+        
+        // Navigation procedures
         if navigationAction.navigationType == .linkActivated  {
             if let url = navigationAction.request.url,
                 let host = url.host, !host.hasPrefix("undergroundvampireclub.com"),
