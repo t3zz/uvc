@@ -53,7 +53,7 @@
                         <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="UVC" image="miniskull2" selectedImage="miniskull2" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="UVC" image="transparent" selectedImage="transparent" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="webView" destination="Xgl-gy-yWx" id="rgU-ss-LdG"/>
                     </connections>
@@ -115,7 +115,7 @@
     <resources>
         <image name="coming-soon-2461832" width="607" height="1080"/>
         <image name="icons8-shopping-bag-50" width="25" height="25"/>
-        <image name="miniskull2" width="50" height="50"/>
-        <image name="soundcloud-50" width="50" height="50"/>
+        <image name="soundcloud-50" width="35" height="35"/>
+        <image name="transparent" width="40" height="40"/>
     </resources>
 </document>
