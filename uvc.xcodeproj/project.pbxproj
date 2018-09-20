@@ -16,6 +16,7 @@
 		BBA252CD21505168003E0D22 /* uvcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA252CC21505168003E0D22 /* uvcTests.swift */; };
 		BBA252D821505169003E0D22 /* uvcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA252D721505169003E0D22 /* uvcUITests.swift */; };
 		BBA252E6215065BC003E0D22 /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA252E5215065BC003E0D22 /* LaunchScreen.swift */; };
+		BBBA56D22154140A00AC1A22 /* hide.js in Resources */ = {isa = PBXBuildFile; fileRef = BBBA56D12154140A00AC1A22 /* hide.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BBA252D721505169003E0D22 /* uvcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = uvcUITests.swift; sourceTree = "<group>"; };
 		BBA252D921505169003E0D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BBA252E5215065BC003E0D22 /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
+		BBBA56D12154140A00AC1A22 /* hide.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = hide.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				BBA252B521505162003E0D22 /* AppDelegate.swift */,
 				BBA252B721505162003E0D22 /* FirstViewController.swift */,
 				BBA252B921505162003E0D22 /* SecondViewController.swift */,
+				BBBA56D12154140A00AC1A22 /* hide.js */,
 				BBA252BB21505162003E0D22 /* Main.storyboard */,
 				BBA252BE21505168003E0D22 /* Assets.xcassets */,
 				BBA252C021505168003E0D22 /* LaunchScreen.storyboard */,
@@ -238,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBBA56D22154140A00AC1A22 /* hide.js in Resources */,
 				BBA252C221505168003E0D22 /* LaunchScreen.storyboard in Resources */,
 				BBA252BF21505168003E0D22 /* Assets.xcassets in Resources */,
 				BBA252BD21505162003E0D22 /* Main.storyboard in Resources */,

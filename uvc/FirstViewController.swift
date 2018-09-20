@@ -9,9 +9,9 @@
 import UIKit
 import WebKit
 
-class FirstViewController: UIViewController, WKNavigationDelegate {
+class FirstViewController: UIViewController, UITabBarControllerDelegate, WKNavigationDelegate {
 
-    @IBOutlet weak var webView: WKWebView!
+    @IBOutlet var webView: WKWebView!
     
     // Add loading indicator
     private var loadingObservation: NSKeyValueObservation?
@@ -26,13 +26,22 @@ class FirstViewController: UIViewController, WKNavigationDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Call tabBarController
+        tabBarController?.delegate = self
+        
         // Set navigationDelegate
         webView.navigationDelegate = self
 
         // Do any additional setup after loading the view, typically from a nib.
         webView.allowsBackForwardNavigationGestures = true
         webView.scrollView.bounces = false
-
+        webView.allowsLinkPreview = true
+        
+        // Scrolling Offset Bug Fix
+        func scrollViewDidScroll(_ scrollView: UIScrollView) {
+            scrollView.bounds = webView.bounds
+        }
+        
         let url = URL (string: "https://undergroundvampireclub.com");
         let request = URLRequest(url: url!);
         webView.load(request);
@@ -63,6 +72,19 @@ class FirstViewController: UIViewController, WKNavigationDelegate {
         scrollView.pinchGestureRecognizer?.isEnabled = false
     }
     
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        //
+        if webView.url == URL (string: "https://undergroundvampireclub.com/") {
+            // do nothing...
+            print("doing nothing")
+        } else {
+            print("reload uvc site")
+            let url = URL (string: "https://undergroundvampireclub.com/");
+            let request = URLRequest(url: url!);
+            webView.load(request);
+        }
+    }
+    
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
         // Do some stuff before navigation procedures
         let css = "body { background-color : #222 }"
@@ -71,8 +93,11 @@ class FirstViewController: UIViewController, WKNavigationDelegate {
             "meta.name = 'viewport';" +
             "meta.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';" +
             "var head = document.getElementsByTagName('head')[0];" + "head.appendChild(meta);";
+        let logojs = "var style = document.createElement('logo')" + "style.text = 'div#td-header-wrap {display:hidden;}';" + "document.head.appendChild(style);"
+
         webView.evaluateJavaScript(scrolljs, completionHandler: nil)
         webView.evaluateJavaScript(cssjs, completionHandler: nil)
+        webView.evaluateJavaScript(logojs, completionHandler: nil)
         
         // Navigation procedures
         if navigationAction.navigationType == .linkActivated  {
@@ -81,14 +106,14 @@ class FirstViewController: UIViewController, WKNavigationDelegate {
                 UIApplication.shared.canOpenURL(url) {
                 UIApplication.shared.open(url)
                 print(url)
-                print("Redirected to browser. No need to open it locally")
+                print("Opened external link, Redirected to browser:", url)
                 decisionHandler(.cancel)
             } else {
-                print("Open it locally")
+//                print("Open it locally")
                 decisionHandler(.allow)
             }
         } else {
-            print("not a user click")
+//            print("not a user click")
             decisionHandler(.allow)
         }
     }

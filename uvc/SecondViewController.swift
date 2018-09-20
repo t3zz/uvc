@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import AVFoundation
 
 class SecondViewController: UIViewController, WKNavigationDelegate {
     
@@ -15,9 +16,10 @@ class SecondViewController: UIViewController, WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Set navigationDelegate
         webView.navigationDelegate = self
-        
+
         // Do any additional setup after loading the view, typically from a nib.
         webView.allowsBackForwardNavigationGestures = true
         webView.scrollView.bounces = false

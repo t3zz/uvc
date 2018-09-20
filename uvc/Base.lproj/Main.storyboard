@@ -25,7 +25,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="C73-KU-wUG"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Shop" image="merch" selectedImage="merch" id="SaM-PZ-30g"/>
+                    <tabBarItem key="tabBarItem" title="Shop" image="icons8-shopping-bag-50" selectedImage="icons8-shopping-bag-50" id="SaM-PZ-30g"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D3X-ab-TFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -83,7 +83,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="SoundCloud" image="soundcloud" selectedImage="soundcloud" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="SoundCloud" image="soundcloud-50" selectedImage="soundcloud-50" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="webView" destination="gOV-nk-h3V" id="qd5-Eu-fMQ"/>
                     </connections>
@@ -114,8 +114,8 @@
     </scenes>
     <resources>
         <image name="coming-soon-2461832" width="607" height="1080"/>
-        <image name="merch" width="30" height="30"/>
+        <image name="icons8-shopping-bag-50" width="25" height="25"/>
         <image name="miniskull2" width="50" height="50"/>
-        <image name="soundcloud" width="30" height="30"/>
+        <image name="soundcloud-50" width="50" height="50"/>
     </resources>
 </document>
