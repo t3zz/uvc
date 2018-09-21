@@ -5,6 +5,10 @@
 
 Our UVC app is written for iOS using Swift 4.2, utilizing WKWebView to display a web version of our site. Certain changes to said webView keep the content nice and clean :D
 
+## Branches
+
+Our repo is split amongst branches. The 'master' branch includes this readme and other info. The 'release' branch is for official release code and committed changes, while the 'alpha' branch is for working code and unannounced features. A future experimental branch will be put in place to mess around with a few things and really shake up the app! Many things to come.
+
 ## How Build
 
 Clone GitHub repo and open .xcodeproj in Xcode (Xcode 10 required)
