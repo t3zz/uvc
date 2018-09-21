@@ -90,7 +90,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="359.37031484257875"/>
+            <point key="canvasLocation" x="742" y="1839"/>
+        </scene>
+        <!--Wallpapers-->
+        <scene sceneID="tdn-uO-shJ">
+            <objects>
+                <viewController id="OS4-T8-FWM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E8K-iV-9TC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Odm-KG-AdD"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Wallpapers" image="wallpaper" selectedImage="wallpaper" id="HsV-es-tyK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oKu-jO-hqw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="461"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -104,6 +120,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="OS4-T8-FWM" kind="relationship" relationship="viewControllers" id="I95-67-8cN"/>
                         <segue destination="Yex-O0-9RE" kind="relationship" relationship="viewControllers" id="TrG-7C-2fl"/>
                     </connections>
                 </tabBarController>
@@ -117,5 +134,6 @@
         <image name="icons8-shopping-bag-50" width="25" height="25"/>
         <image name="soundcloud-50" width="35" height="35"/>
         <image name="transparent" width="40" height="40"/>
+        <image name="wallpaper" width="40" height="40"/>
     </resources>
 </document>
