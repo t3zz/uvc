@@ -42,7 +42,7 @@ class FirstViewController: UIViewController, UITabBarControllerDelegate, WKNavig
             scrollView.bounds = webView.bounds
         }
         
-        let url = URL (string: "https://undergroundvampireclub.com");
+        let url = URL (string: "https://undergroundvampireclub.com/");
         let request = URLRequest(url: url!);
         webView.load(request);
         

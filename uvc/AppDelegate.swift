@@ -14,14 +14,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         // Set Tab Bar Color to purple
         UITabBar.appearance().tintColor = UIColor.purple
-        // Set unused Tab Bar items to black
-        UITabBar.appearance().unselectedItemTintColor = UIColor.black
+        // Set unused Tab Bar items to white
+        UITabBar.appearance().unselectedItemTintColor = UIColor.white
         
         return true
     }
