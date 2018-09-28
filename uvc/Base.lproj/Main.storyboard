@@ -18,13 +18,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uvcshop" translatesAutoresizingMaskIntoConstraints="NO" id="R9r-0H-zNk">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <rect key="frame" x="0.0" y="-14.5" width="375" height="632.5"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="R9r-0H-zNk" firstAttribute="leading" secondItem="7uH-MS-mfB" secondAttribute="leading" id="Uuz-OD-Ag8"/>
-                            <constraint firstItem="R9r-0H-zNk" firstAttribute="top" secondItem="C73-KU-wUG" secondAttribute="top" id="pIU-ZM-DhY"/>
+                            <constraint firstItem="R9r-0H-zNk" firstAttribute="top" secondItem="7uH-MS-mfB" secondAttribute="top" constant="-14.5" id="pIU-ZM-DhY"/>
                             <constraint firstItem="R9r-0H-zNk" firstAttribute="bottom" secondItem="C73-KU-wUG" secondAttribute="bottom" id="qT2-dX-iCF"/>
                             <constraint firstAttribute="trailing" secondItem="R9r-0H-zNk" secondAttribute="trailing" id="rpw-4d-sbk"/>
                         </constraints>
